@@ -1,4 +1,5 @@
 @import 'fonts-include/manrope.scss';
+@import '_easyRadioCheck.scss';
 
 *{
 	margin: 0;
@@ -76,28 +77,33 @@ address{
 
 .timer{
 	width: 660px;
-	height: 153px;
+	height: 300px;
 	
 	position: relative;
 	backdrop-filter: blur(20px);
 	background: rgba(0, 0, 0, 0.28);
 	z-index: 0;
 	border-radius:  0 0 85px 85px;
-	margin: -2px auto 0;
+	margin: 0 auto 0;
+	transform: translateY(-50%);
 }
-
+.timer-wrap{
+	position: absolute;
+	width: calc(100% + 8px);
+	height: 100%;
+	top: 4px;
+	left: -4px;
+}
 .timer__inner{
 	position: absolute;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	padding: 17px 110px;
+	top: 2px;
+	left: 2px;
+	bottom: 5px;
+	right: 2px;
+	padding: 17px 110px 25px;
 	display: flex;
 	justify-content: space-between;
-	background-image: url(../img/png-border.png);
-	background-repeat: no-repeat;
-	background-size: 100% 100%;;
+	align-items: flex-end;
 }
 
 
@@ -112,7 +118,7 @@ address{
 	font-size: 50px;
 	line-height: 68px;
 	
-	
+	margin-bottom: 5px;
 	background: linear-gradient(100.84deg, #CD9E5E 19.06%, #CD9E5E 31.26%, #FFC984 47.27%, #CD9E5E 99.89%, #E6AB60 131.15%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -132,54 +138,160 @@ address{
 }
 
 
-.form-container{
+.cblock{
 	width: 100%;
-	height: 140px;
+	min-height: 165px;
 	position: absolute;
-	background-image: url(../img/form-border.png);
-	background-repeat: no-repeat;
-	background-size: 100% 100%;;
-
-
-	position: absolute;
-
-	bottom: 0;
-
-	@media (max-width: 1400px){
-		height: 200px;
-		background-image: url(../img/form-border-240.png);
-		background-repeat: no-repeat;
-		background-size: 100% 100%;;
-	}
-
-	@media (max-width: 1300px){
-		height: 240px;
-	}
-
-	@media (max-width: 1240px){
-		height: 360px;
-		background-image: url(../img/form-border-360.png);
-		background-repeat: no-repeat;
-		background-size: 100% 100%;;
-	}
-
-	@media (max-width: 1200px){
-		height: 400px;
-	}
-}
-.white-grad {
-    background:url('data:image/svg+xml;utf8,<svg   xmlns="http://www.w3.org/2000/svg" ><defs><linearGradient id="Gradient" x1="0" x2="100" y1="0" y2="0" gradientUnits="userSpaceOnUse"><stop stop-color="%239c20aa" offset="0"/><stop stop-color="%23fb3570" offset="1"/></linearGradient></defs><rect x="5" y="5" width="100%" height="100%" style="height:calc(100% - 10px);width:calc(100% - 10px)" rx="20" ry="20" stroke-width="10" fill="transparent" stroke="url(%23Gradient)"/></svg>');
-    color: #313149;
-    padding:25px;
-    border-radius:15px;
-    display:inline-block;
-    margin: 75px 0;
-}
-
-svg {
-	width:100%;
-	height:200px;
-	margin:10px;
+	bottom: 30px;
 
 	
+}
+.cblock__inner{
+	width: 100%;
+	height: 100%;
+	min-height: 165px;
+	padding: 30px 35px 20px 40px;
+	backdrop-filter: blur(20px);
+	background: rgba(0, 0, 0, 0.28);
+	display: flex;
+	border-radius: 75px;
+	position: relative;
+	z-index: 10;
+}
+.form-wrap {
+	width: calc(100% + 8px);
+	height: calc(100% + 8px);
+	position: absolute;
+	z-index: 5;
+	top: -4px;
+	left: -4px;
+}
+
+.form{
+	padding-left: 40px;
+	display: flex;
+}
+
+.form__col-1{
+	margin-right: 40px;
+}
+
+.form__col-2{
+	width: 100%;
+	max-width: 310px;
+}
+
+.form__row{
+	display: flex;
+	justify-content: space-between;
+	.form__iwrap{
+		max-width: 200px;
+		&:first-of-type{
+			margin-right: 24px;
+		}
+	}
+
+	margin-bottom: 16px;
+}
+
+
+
+
+
+.form__iwrap{
+	width: 100%;
+	
+}
+
+.form__tinput{
+	width: 100%;
+	height: 36px;
+	background: rgba(255, 255, 255, 0.2);
+	border-radius: 15px;	
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 19px;
+	text-transform: capitalize;
+	color: #ADADAD;
+	padding: 0 20px;
+
+	&::placeholder{
+		opacity: 1;
+	}
+}
+
+.form__send{
+	font-family: $ff;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 19px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	letter-spacing: 0.015em;
+	text-transform: uppercase;
+	width: 100%;
+	height: 44px;
+	color: #fff;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	cursor: pointer;
+	background: linear-gradient(90.92deg, #8F653B 0.36%, #EEBC70 66.93%, #8F653B 102.62%);
+	border-radius: 15px;
+	margin-top: 14px;
+
+}
+.cblock__stats{
+	display: flex;
+}
+.cblock__stats--item{
+	&:first-of-type{
+		width: 145px;
+	}
+
+	&:last-of-type{
+		width: 135px;
+	}
+}
+
+.cblock__stats--num{
+	font-family: $ff;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 50px;
+	text-align: center;
+	margin-bottom: 8px;
+	background: linear-gradient(100.84deg, #CD9E5E 19.06%, #CD9E5E 31.26%, #FFC984 47.27%, #CD9E5E 99.89%, #E6AB60 131.15%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.cblock__stats--text{	
+	font-family: $ff;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 8px;
+	line-height: 11px;
+	background: linear-gradient(100.84deg, #CD9E5E 19.06%, #CD9E5E 31.26%, #FFC984 47.27%, #CD9E5E 99.89%, #E6AB60 131.15%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.sound-btn{
+	width: 24px;
+	height: 24px;
+	background-image: url('../img/sound.svg');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateX(-50%);
 }

@@ -20,6 +20,23 @@
         <div class="hero__inner">
             <a href="#" class="logo"><img src="assets/img/logo.svg" alt=""></a>
             <div class="timer">
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="timer-wrap">
+                    <defs>
+                        <linearGradient id="Gradient" x1="0" x2="100" y1="0" y2="0" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#CD9E5E" offset="0%"/>
+                            <stop stop-color="#CD9E5E" offset="10%"/>
+                            <stop stop-color="#CD9E5E" offset="20%"/>
+                            <stop stop-color="#CD9E5E" offset="30%"/>
+                            <stop stop-color="#CD9E5E" offset="40%"/>
+                            <stop stop-color="#CD9E5E" offset="50%"/>
+                            <stop stop-color="#E6AB60" offset="100%"/>
+                        </linearGradient>
+                    </defs>
+                    <rect x="5" y="5" height="100%" width="100%" style="width:calc(100% - 10px);height:calc(100% - 10px)" rx="80" ry="80"  stroke-width="2" fill="transparent" stroke="url(#Gradient)"/>
+                </svg>
+
+
                 <div class="timer__inner">
                     
                     <div class="timer__days">
@@ -70,30 +87,86 @@
 
 
             </div>
-            <div class="form-container">
-            
+
+
+
+            <div class="cblock">
+                <div class="cblock__inner">
+
+
+                    <button class="sound-btn">
+
+                    </button>
+
+
+                    <div class="cblock__stats">
+                        <div class="cblock__stats--item">
+                            <div class="cblock__stats--num">
+                                10 %
+                            </div>
+                            <p class="cblock__stats--text">скидки на курc для тех, кто присойденится к нам прямо сейчас</p>
+                        </div>
+                        <div class="cblock__stats--item">
+                            <div class="cblock__stats--num">
+                                15 %
+                            </div>
+                            <p class="cblock__stats--text">единоразовая скидка на любой продукт при заполнении телефонных данных</p>
+                        </div>
+                    </div>
+
+
+                    <form action="post" class="form">
+                        <div class="form__col-1">
+                            <div class="form__row">
+                                <div class="form__iwrap">
+                                    <input type="text" class="form__tinput" name="name" placeholder="Имя*">
+                                </div>
+                                <div class="form__iwrap">
+                                    <input type="text" class="form__tinput" name="email" placeholder="Телефон*">
+                                </div>                                
+                            </div>
+                            <div class="form__iwrap">
+                                <input type="text" class="form__tinput" name="email" placeholder="Email">
+                            </div>                                
+                        </div>
+                        <div class="form__col-2">
+
+                            
+
+                            <label for="cb-3" class="easyCheckbox">
+                                <input class ='easyCheckbox__hidden-checkbox' type="checkbox" name="approve" id="cb-3" checked>
+                                <div class="easyCheckbox__visible-checkbox easyCheckbox__img"></div>
+                                <p class="easyCheckbox__text">Подписаться на все новости о проекте</p>
+                            </label>
+                            <button class="form__send">Присоединиться</button>
+                        </div>
+                    </form>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="form-wrap">
+                        <defs>
+                        <linearGradient id="Gradient" x1="0" x2="100" y1="0" y2="0" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#CD9E5E" offset="0%"/>
+                            <stop stop-color="#CD9E5E" offset="10%"/>
+                            <stop stop-color="#CD9E5E" offset="20%"/>
+                            <stop stop-color="#CD9E5E" offset="30%"/>
+                            <stop stop-color="#CD9E5E" offset="40%"/>
+                            <stop stop-color="#CD9E5E" offset="50%"/>
+                            <stop stop-color="#E6AB60" offset="100%"/>
+                        </linearGradient>
+                    </defs>
+                    <rect x="5" y="5" height="100%" width="100%" style="width:calc(100% - 10px);height:calc(100% - 10px)" rx="75" ry="75" stroke-width="1" fill="transparent" stroke="url(#Gradient)"/>
+                </svg>
+
+
+                
             </div>
 
-            <svg xmlns="http://www.w3.org/2000/svg">
-    <defs>
-              <linearGradient id="Gradient" x1="0" x2="100" y1="0" y2="0" gradientUnits="userSpaceOnUse">
-                 <stop stop-color="#CD9E5E" offset="0%"/>
-                 <stop stop-color="#CD9E5E" offset="10%"/>
-                 <stop stop-color="#CD9E5E" offset="20%"/>
-                 <stop stop-color="#CD9E5E" offset="30%"/>
-                 <stop stop-color="#CD9E5E" offset="40%"/>
-                 <stop stop-color="#CD9E5E" offset="50%"/>
-                 <stop stop-color="#E6AB60" offset="100%"/>
-              </linearGradient>
-           </defs>
-          <rect x="5" y="5" height="100%" width="100%" style="width:calc(100% - 10px);height:calc(100% - 10px)" rx="100" ry="100" stroke-width="2" fill="transparent" stroke="url(#Gradient)"/>
-    </svg>
-        </div>
             
+        </div>
+        
         
     </section>
     
-
     
     
     <script src="assets/js/main.js"></script>
