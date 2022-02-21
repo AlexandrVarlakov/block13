@@ -87,7 +87,8 @@ address {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: relative; }
+  position: relative;
+  padding: 0 30px; }
 
 .video-bg {
   position: absolute;
@@ -162,3 +163,31 @@ address {
   text-transform: uppercase;
   text-align: center;
   color: rgba(245, 245, 245, 0.55); }
+
+.form-container {
+  width: 100%;
+  height: 140px;
+  position: absolute;
+  background-image: url(../img/form-border.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  bottom: 0; }
+  @media (max-width: 1400px) {
+    .form-container {
+      height: 200px;
+      background-image: url(../img/form-border-240.png);
+      background-repeat: no-repeat;
+      background-size: 100% 100%; } }
+  @media (max-width: 1300px) {
+    .form-container {
+      height: 240px; } }
+  @media (max-width: 1240px) {
+    .form-container {
+      height: 360px;
+      background-image: url(../img/form-border-360.png);
+      background-repeat: no-repeat;
+      background-size: 100% 100%; } }
+  @media (max-width: 1200px) {
+    .form-container {
+      height: 400px; } }
