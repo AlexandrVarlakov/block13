@@ -1,4 +1,5 @@
 @import 'fonts-include/manrope.scss';
+@import 'fonts-include/_poppins.scss';
 @import '_easyRadioCheck.scss';
 
 *{
@@ -11,7 +12,10 @@ html{
 	font-family: $ff;
 }
 
-
+body{
+	background: radial-gradient(73.19% 16.44% at 80.9% 16.77%, #444444 0%, rgba(68, 68, 68, 0) 100%), #252525;
+	overflow-x: hidden;
+}
 a{
 	text-decoration: none;
 	outline: none;
@@ -74,7 +78,9 @@ address{
 	max-width: 1200px;
 	position: relative;
 }
-
+.timer__seconds{
+	width: 85px;
+}
 .timer{
 	width: 660px;
 	height: 300px;
@@ -117,7 +123,7 @@ address{
 	font-weight: bold;
 	font-size: 50px;
 	line-height: 68px;
-	
+	text-align: center;
 	margin-bottom: 5px;
 	background: linear-gradient(100.84deg, #CD9E5E 19.06%, #CD9E5E 31.26%, #FFC984 47.27%, #CD9E5E 99.89%, #E6AB60 131.15%);
 	-webkit-background-clip: text;
@@ -294,4 +300,320 @@ address{
 	left: 0;
 	top: 50%;
 	transform: translateX(-50%);
+}
+
+.about{
+	padding: 80px 30px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	position: relative;
+	
+}
+
+
+.about-star{
+	position: absolute;
+	right: 0;
+	transform: translateX(50%);
+}
+
+
+.about__inner{
+	width: 100%;
+	max-width: 1200px;
+}
+
+.about__title{
+	
+	font-style: normal;
+	font-weight: bold;
+	font-size: 48px;
+	line-height: 65px;
+	text-align: center;
+	margin-bottom: 8px;
+	font-family: $ff;
+	background: linear-gradient(100.84deg, #CD9E5E 19.06%, #CD9E5E 31.26%, #FFC984 47.27%, #CD9E5E 99.89%, #E6AB60 131.15%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.about__text-block{
+	margin: 48px 0;
+}
+
+.about__subtitle{
+	font-family: $ff;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 152.95%;
+	text-align: center;
+	max-width: 510px;
+	color: #FFFFFF;
+	margin: 0 auto 16px;
+}
+
+.about__text{
+	font-family: $ff;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 20px;
+	line-height: 169.95%;
+
+	/* or 34px */
+	text-align: center;
+
+	color: #FFFFFF;
+}
+
+
+.results{
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.results__item{
+	margin: 0 10px;
+}
+
+.results__nums{
+	text-align: center;
+
+	font-weight: 800;
+	font-size: 56px;
+	line-height: 76px;
+
+	font-family: $ff;
+	background: linear-gradient(100.84deg, #CD9E5E 19.06%, #CD9E5E 31.26%, #FFC984 47.27%, #CD9E5E 99.89%, #E6AB60 131.15%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.results__text{
+	font-family: $ff;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 19px;
+	text-align: center;
+	text-transform: uppercase;
+
+	color: #FFFFFF;
+}
+
+
+.s-cards{
+	padding: 36px 30px 80px;
+	display: flex;
+	justify-content: center;
+
+
+}
+
+.s-cards__inner{
+	width: 100%;
+	max-width: 1200px;
+}
+
+.cards{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 24px;
+}
+
+.card{
+	padding: 50px 5px 70px;
+	display: flex;
+	justify-content: center;
+	position: relative;
+
+	background: rgba(0, 0, 0, 0.18);
+	backdrop-filter: blur(10px);
+
+	/* Note: backdrop-filter has minimal browser support */
+	border-radius: 10px;
+
+
+}
+
+.card__inner{
+	width: 100%;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.card__title{
+	padding: 11px 66px;
+	position: relative;
+	margin: 0 auto 40px;
+	display: inline-block;
+	
+	
+	background: rgba(0, 0, 0, 0.18);
+	backdrop-filter: blur(10px);
+	border-radius: 85px;
+}
+
+.card__title--wrap{
+	position: absolute;
+	left: -5px;
+	top: -5px;
+	width: calc(100% + 10px);
+	height: calc(100% + 10px);
+}
+
+
+
+.card__title--text{
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 36px;
+
+	/* identical to box height */
+	text-transform: uppercase;
+	text-align: center;
+	background: linear-gradient(100.84deg, #CD9E5E 19.06%, #CD9E5E 31.26%, #FFC984 47.27%, #CD9E5E 99.89%, #E6AB60 131.15%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.card__list{
+	list-style: none;
+	max-width: 290px;
+	li{
+		font-family: $ff;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 169.95%;
+		letter-spacing: -0.01em;
+
+		color: #FFFFFF;
+
+
+		margin-bottom: 24px;
+
+		&:last-of-type{
+			margin-bottom: 0;
+		}
+	}
+}
+
+.card-wrap{
+	position: absolute;
+
+	width: calc(100% + 10px);
+	height: calc(100% + 10px);
+	top: -5px;
+	left: -5px;
+}
+
+.s-contacts{
+	padding: 36px 30px 48px;
+	display: flex;
+	justify-content: center;
+}
+
+.s-contacts__inner{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	max-width: 1200px;
+}
+
+.contacts{
+	width: 100%;
+	max-width: 548px;
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+}
+
+
+.contscts__item{
+	margin: 0 15px;
+
+	&:first-of-type{
+		margin-left: 0;
+	}
+
+	&:last-of-type{
+		margin-right: 0;
+	}
+}
+
+.contacts__item--title{
+	
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10px;
+	line-height: 169.95%;
+
+	/* identical to box height, or 17px */
+	text-transform: uppercase;
+	text-align: center;
+	color: rgba(255, 255, 255, 0.4);
+
+
+}
+
+.contacts__item--link{
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10px;
+	line-height: 169.95%;
+
+	/* identical to box height, or 17px */
+	text-decoration-line: underline;
+	text-transform: uppercase;
+
+	color: #FFFFFF;
+}
+
+
+.footer{
+	display: flex;
+	justify-content: center;
+	padding: 0 30px 28px;
+}
+
+.footer__inner{
+	width: 100%;
+	max-width: 1200px;
+	display: flex;
+	align-items: center;
+	padding-bottom: 32px;
+}
+
+.footer__title{	
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 100;
+	font-size: 23px;
+	line-height: 34px;
+	text-align: center;
+	flex-shrink: 0;
+	text-transform: uppercase;
+	text-align: center;
+	background: linear-gradient(100.84deg, #CD9E5E 19.06%, #CD9E5E 31.26%, #FFC984 47.27%, #CD9E5E 99.89%, #E6AB60 131.15%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	margin: 0 15px;
+}
+
+.footer__line{
+	flex-grow: 1;
+	height: 1px;
+	background: linear-gradient(89.97deg, #8F653B -57.04%, #EEBC70 72.01%, #8F653B 141.18%);
 }

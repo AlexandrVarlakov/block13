@@ -47,6 +47,132 @@
   font-weight: 800;
   font-style: normal; }
 
+@font-face {
+  font-family: 'Poppins';
+  src: url("../fonts/Poppins/Poppins-ExtraLight.eot");
+  src: local("Poppins ExtraLight"), local("Poppins-ExtraLight"), url("../fonts/Poppins/Poppins-ExtraLight.eot?#iefix") format("embedded-opentype"), url("../fonts/Poppins/Poppins-ExtraLight.woff2") format("woff2"), url("../fonts/Poppins/Poppins-ExtraLight.woff") format("woff"), url("../fonts/Poppins/Poppins-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("../fonts/Poppins/Poppins-Medium.eot");
+  src: local("Poppins Medium"), local("Poppins-Medium"), url("../fonts/Poppins/Poppins-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Poppins/Poppins-Medium.woff2") format("woff2"), url("../fonts/Poppins/Poppins-Medium.woff") format("woff"), url("../fonts/Poppins/Poppins-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("../fonts/Poppins/Poppins-LightItalic.eot");
+  src: local("Poppins Light Italic"), local("Poppins-LightItalic"), url("../fonts/Poppins/Poppins-LightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Poppins/Poppins-LightItalic.woff2") format("woff2"), url("../fonts/Poppins/Poppins-LightItalic.woff") format("woff"), url("../fonts/Poppins/Poppins-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("../fonts/Poppins/Poppins-ExtraLightItalic.eot");
+  src: local("Poppins ExtraLight Italic"), local("Poppins-ExtraLightItalic"), url("../fonts/Poppins/Poppins-ExtraLightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Poppins/Poppins-ExtraLightItalic.woff2") format("woff2"), url("../fonts/Poppins/Poppins-ExtraLightItalic.woff") format("woff"), url("../fonts/Poppins/Poppins-ExtraLightItalic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("../fonts/Poppins/Poppins-Regular.eot");
+  src: local("Poppins Regular"), local("Poppins-Regular"), url("../fonts/Poppins/Poppins-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Poppins/Poppins-Regular.woff2") format("woff2"), url("../fonts/Poppins/Poppins-Regular.woff") format("woff"), url("../fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("../fonts/Poppins/Poppins-SemiBold.eot");
+  src: local("Poppins SemiBold"), local("Poppins-SemiBold"), url("../fonts/Poppins/Poppins-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Poppins/Poppins-SemiBold.woff2") format("woff2"), url("../fonts/Poppins/Poppins-SemiBold.woff") format("woff"), url("../fonts/Poppins/Poppins-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("../fonts/Poppins/Poppins-Black.eot");
+  src: local("Poppins Black"), local("Poppins-Black"), url("../fonts/Poppins/Poppins-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/Poppins/Poppins-Black.woff2") format("woff2"), url("../fonts/Poppins/Poppins-Black.woff") format("woff"), url("../fonts/Poppins/Poppins-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("../fonts/Poppins/Poppins-ExtraBoldItalic.eot");
+  src: local("Poppins ExtraBold Italic"), local("Poppins-ExtraBoldItalic"), url("../fonts/Poppins/Poppins-ExtraBoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Poppins/Poppins-ExtraBoldItalic.woff2") format("woff2"), url("../fonts/Poppins/Poppins-ExtraBoldItalic.woff") format("woff"), url("../fonts/Poppins/Poppins-ExtraBoldItalic.ttf") format("truetype");
+  font-weight: 800;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("../fonts/Poppins/Poppins-MediumItalic.eot");
+  src: local("Poppins Medium Italic"), local("Poppins-MediumItalic"), url("../fonts/Poppins/Poppins-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Poppins/Poppins-MediumItalic.woff2") format("woff2"), url("../fonts/Poppins/Poppins-MediumItalic.woff") format("woff"), url("../fonts/Poppins/Poppins-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("../fonts/Poppins/Poppins-Light.eot");
+  src: local("Poppins Light"), local("Poppins-Light"), url("../fonts/Poppins/Poppins-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Poppins/Poppins-Light.woff2") format("woff2"), url("../fonts/Poppins/Poppins-Light.woff") format("woff"), url("../fonts/Poppins/Poppins-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("../fonts/Poppins/Poppins-Bold.eot");
+  src: local("Poppins Bold"), local("Poppins-Bold"), url("../fonts/Poppins/Poppins-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Poppins/Poppins-Bold.woff2") format("woff2"), url("../fonts/Poppins/Poppins-Bold.woff") format("woff"), url("../fonts/Poppins/Poppins-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("../fonts/Poppins/Poppins-Thin.eot");
+  src: local("Poppins Thin"), local("Poppins-Thin"), url("../fonts/Poppins/Poppins-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/Poppins/Poppins-Thin.woff2") format("woff2"), url("../fonts/Poppins/Poppins-Thin.woff") format("woff"), url("../fonts/Poppins/Poppins-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("../fonts/Poppins/Poppins-Italic.eot");
+  src: local("Poppins Italic"), local("Poppins-Italic"), url("../fonts/Poppins/Poppins-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/Poppins/Poppins-Italic.woff2") format("woff2"), url("../fonts/Poppins/Poppins-Italic.woff") format("woff"), url("../fonts/Poppins/Poppins-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("../fonts/Poppins/Poppins-ThinItalic.eot");
+  src: local("Poppins Thin Italic"), local("Poppins-ThinItalic"), url("../fonts/Poppins/Poppins-ThinItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Poppins/Poppins-ThinItalic.woff2") format("woff2"), url("../fonts/Poppins/Poppins-ThinItalic.woff") format("woff"), url("../fonts/Poppins/Poppins-ThinItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("../fonts/Poppins/Poppins-BlackItalic.eot");
+  src: local("Poppins Black Italic"), local("Poppins-BlackItalic"), url("../fonts/Poppins/Poppins-BlackItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Poppins/Poppins-BlackItalic.woff2") format("woff2"), url("../fonts/Poppins/Poppins-BlackItalic.woff") format("woff"), url("../fonts/Poppins/Poppins-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("../fonts/Poppins/Poppins-BoldItalic.eot");
+  src: local("Poppins Bold Italic"), local("Poppins-BoldItalic"), url("../fonts/Poppins/Poppins-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Poppins/Poppins-BoldItalic.woff2") format("woff2"), url("../fonts/Poppins/Poppins-BoldItalic.woff") format("woff"), url("../fonts/Poppins/Poppins-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("../fonts/Poppins/Poppins-SemiBoldItalic.eot");
+  src: local("Poppins SemiBold Italic"), local("Poppins-SemiBoldItalic"), url("../fonts/Poppins/Poppins-SemiBoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Poppins/Poppins-SemiBoldItalic.woff2") format("woff2"), url("../fonts/Poppins/Poppins-SemiBoldItalic.woff") format("woff"), url("../fonts/Poppins/Poppins-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("../fonts/Poppins/Poppins-ExtraBold.eot");
+  src: local("Poppins ExtraBold"), local("Poppins-ExtraBold"), url("../fonts/Poppins/Poppins-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Poppins/Poppins-ExtraBold.woff2") format("woff2"), url("../fonts/Poppins/Poppins-ExtraBold.woff") format("woff"), url("../fonts/Poppins/Poppins-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal; }
+
 /*Checkbox- vars:*/
 /*Radio - vars:*/
 /***************easyCheckbox*********************/
@@ -212,6 +338,11 @@
 html {
   font-family: "Manrope"; }
 
+body {
+  background: -o-radial-gradient(80.9% 16.77%, 73.19% 16.44%, #444444 0%, rgba(68, 68, 68, 0) 100%), #252525;
+  background: radial-gradient(73.19% 16.44% at 80.9% 16.77%, #444444 0%, rgba(68, 68, 68, 0) 100%), #252525;
+  overflow-x: hidden; }
+
 a {
   text-decoration: none;
   outline: none; }
@@ -268,6 +399,9 @@ address {
   max-width: 1200px;
   position: relative; }
 
+.timer__seconds {
+  width: 85px; }
+
 .timer {
   width: 660px;
   height: 300px;
@@ -315,6 +449,7 @@ address {
   font-weight: bold;
   font-size: 50px;
   line-height: 68px;
+  text-align: center;
   margin-bottom: 5px;
   background: -o-linear-gradient(349.16deg, #CD9E5E 19.06%, #CD9E5E 31.26%, #FFC984 47.27%, #CD9E5E 99.89%, #E6AB60 131.15%);
   background: linear-gradient(100.84deg, #CD9E5E 19.06%, #CD9E5E 31.26%, #FFC984 47.27%, #CD9E5E 99.89%, #E6AB60 131.15%);
@@ -500,3 +635,325 @@ address {
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%); }
+
+.about {
+  padding: 80px 30px;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative; }
+
+.about-star {
+  position: absolute;
+  right: 0;
+  -webkit-transform: translateX(50%);
+      -ms-transform: translateX(50%);
+          transform: translateX(50%); }
+
+.about__inner {
+  width: 100%;
+  max-width: 1200px; }
+
+.about__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 65px;
+  text-align: center;
+  margin-bottom: 8px;
+  font-family: "Manrope";
+  background: -o-linear-gradient(349.16deg, #CD9E5E 19.06%, #CD9E5E 31.26%, #FFC984 47.27%, #CD9E5E 99.89%, #E6AB60 131.15%);
+  background: linear-gradient(100.84deg, #CD9E5E 19.06%, #CD9E5E 31.26%, #FFC984 47.27%, #CD9E5E 99.89%, #E6AB60 131.15%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+
+.about__text-block {
+  margin: 48px 0; }
+
+.about__subtitle {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 152.95%;
+  text-align: center;
+  max-width: 510px;
+  color: #FFFFFF;
+  margin: 0 auto 16px; }
+
+.about__text {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 169.95%;
+  /* or 34px */
+  text-align: center;
+  color: #FFFFFF; }
+
+.results {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -webkit-justify-content: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly; }
+
+.results__item {
+  margin: 0 10px; }
+
+.results__nums {
+  text-align: center;
+  font-weight: 800;
+  font-size: 56px;
+  line-height: 76px;
+  font-family: "Manrope";
+  background: -o-linear-gradient(349.16deg, #CD9E5E 19.06%, #CD9E5E 31.26%, #FFC984 47.27%, #CD9E5E 99.89%, #E6AB60 131.15%);
+  background: linear-gradient(100.84deg, #CD9E5E 19.06%, #CD9E5E 31.26%, #FFC984 47.27%, #CD9E5E 99.89%, #E6AB60 131.15%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+
+.results__text {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF; }
+
+.s-cards {
+  padding: 36px 30px 80px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.s-cards__inner {
+  width: 100%;
+  max-width: 1200px; }
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 24px; }
+
+.card {
+  padding: 50px 5px 70px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  background: rgba(0, 0, 0, 0.18);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 10px; }
+
+.card__inner {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.card__title {
+  padding: 11px 66px;
+  position: relative;
+  margin: 0 auto 40px;
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.18);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 85px; }
+
+.card__title--wrap {
+  position: absolute;
+  left: -5px;
+  top: -5px;
+  width: calc(100% + 10px);
+  height: calc(100% + 10px); }
+
+.card__title--text {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+  /* identical to box height */
+  text-transform: uppercase;
+  text-align: center;
+  background: -o-linear-gradient(349.16deg, #CD9E5E 19.06%, #CD9E5E 31.26%, #FFC984 47.27%, #CD9E5E 99.89%, #E6AB60 131.15%);
+  background: linear-gradient(100.84deg, #CD9E5E 19.06%, #CD9E5E 31.26%, #FFC984 47.27%, #CD9E5E 99.89%, #E6AB60 131.15%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+
+.card__list {
+  list-style: none;
+  max-width: 290px; }
+  .card__list li {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 169.95%;
+    letter-spacing: -0.01em;
+    color: #FFFFFF;
+    margin-bottom: 24px; }
+    .card__list li:last-of-type {
+      margin-bottom: 0; }
+
+.card-wrap {
+  position: absolute;
+  width: calc(100% + 10px);
+  height: calc(100% + 10px);
+  top: -5px;
+  left: -5px; }
+
+.s-contacts {
+  padding: 36px 30px 48px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.s-contacts__inner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  max-width: 1200px; }
+
+.contacts {
+  width: 100%;
+  max-width: 548px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none; }
+
+.contscts__item {
+  margin: 0 15px; }
+  .contscts__item:first-of-type {
+    margin-left: 0; }
+  .contscts__item:last-of-type {
+    margin-right: 0; }
+
+.contacts__item--title {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 169.95%;
+  /* identical to box height, or 17px */
+  text-transform: uppercase;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.4); }
+
+.contacts__item--link {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 169.95%;
+  /* identical to box height, or 17px */
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  text-transform: uppercase;
+  color: #FFFFFF; }
+
+.footer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 30px 28px; }
+
+.footer__inner {
+  width: 100%;
+  max-width: 1200px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 32px; }
+
+.footer__title {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 100;
+  font-size: 23px;
+  line-height: 34px;
+  text-align: center;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  text-transform: uppercase;
+  text-align: center;
+  background: -o-linear-gradient(349.16deg, #CD9E5E 19.06%, #CD9E5E 31.26%, #FFC984 47.27%, #CD9E5E 99.89%, #E6AB60 131.15%);
+  background: linear-gradient(100.84deg, #CD9E5E 19.06%, #CD9E5E 31.26%, #FFC984 47.27%, #CD9E5E 99.89%, #E6AB60 131.15%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 0 15px; }
+
+.footer__line {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  height: 1px;
+  background: -o-linear-gradient(0.03deg, #8F653B -57.04%, #EEBC70 72.01%, #8F653B 141.18%);
+  background: linear-gradient(89.97deg, #8F653B -57.04%, #EEBC70 72.01%, #8F653B 141.18%); }
