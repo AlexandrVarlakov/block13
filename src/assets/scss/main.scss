@@ -1,0 +1,129 @@
+@import 'fonts-include/manrope.scss';
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html{
+	font-family: $ff;
+}
+
+
+a{
+	text-decoration: none;
+	outline: none;
+}
+
+button{
+	font-family: inherit;
+	border: none;
+	background: transparent;
+	outline: none;
+}
+
+input{
+	font-family: inherit;
+	border: none;
+	background: #fff;
+	outline: none;
+}
+
+address{
+	font-style: normal;
+}
+
+.hero{
+	width: 100%;
+	height: 100vh;
+
+	background-color: #000;
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+
+.video-bg{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+
+	video{
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+
+.logo{
+	position: absolute ;
+	top: 50px;
+	left: 0;
+}
+
+
+.hero__inner{
+	width: 100%;
+	max-width: 1200px;
+	position: relative;
+}
+
+.timer{
+	width: 660px;
+	height: 153px;
+	
+	position: relative;
+	backdrop-filter: blur(20px);
+	background: rgba(0, 0, 0, 0.28);
+	z-index: 0;
+	border-radius:  0 0 85px 85px;
+	margin: -2px auto 0;
+}
+
+.timer__inner{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	padding: 17px 110px;
+	display: flex;
+	justify-content: space-between;
+	background-image: url(../img/png-border.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;;
+}
+
+
+.timer__day-count{
+	
+}
+
+.timer__count-num{
+	font-family: $ff;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 50px;
+	line-height: 68px;
+	
+	
+	background: linear-gradient(100.84deg, #CD9E5E 19.06%, #CD9E5E 31.26%, #FFC984 47.27%, #CD9E5E 99.89%, #E6AB60 131.15%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.timer__count-label{
+	font-family: $ff;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 22px;
+	text-transform: uppercase;
+	text-align: center;
+	color: rgba(245, 245, 245, 0.55);
+
+
+}
