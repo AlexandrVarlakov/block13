@@ -649,6 +649,11 @@ address {
           justify-content: center;
   position: relative; }
 
+.about-round {
+  position: absolute;
+  left: 0;
+  top: 110px; }
+
 .about-star {
   position: absolute;
   right: 0;
@@ -742,11 +747,19 @@ address {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  position: relative; }
+
+.s-cards__round-star {
+  position: absolute;
+  bottom: 10%;
+  left: 30%; }
 
 .s-cards__inner {
   width: 100%;
-  max-width: 1200px; }
+  max-width: 1200px;
+  position: relative;
+  z-index: 5; }
 
 .cards {
   display: grid;
@@ -849,7 +862,9 @@ address {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  position: relative;
+  z-index: 5; }
 
 .s-contacts__inner {
   display: -webkit-box;
@@ -915,7 +930,20 @@ address {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 0 30px 28px; }
+  padding: 0 30px 28px;
+  position: relative; }
+
+.footer-star {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  z-index: 1; }
+
+.footer-round {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1; }
 
 .footer__inner {
   width: 100%;
@@ -928,7 +956,9 @@ address {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-bottom: 32px; }
+  padding-bottom: 32px;
+  position: relative;
+  z-index: 5; }
 
 .footer__title {
   font-family: 'Poppins';

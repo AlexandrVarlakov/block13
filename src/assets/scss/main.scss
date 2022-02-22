@@ -310,7 +310,11 @@ address{
 	position: relative;
 	
 }
-
+.about-round{
+	position: absolute;
+	left: 0;
+	top: 110px;
+}
 
 .about-star{
 	position: absolute;
@@ -409,13 +413,20 @@ address{
 	padding: 36px 30px 80px;
 	display: flex;
 	justify-content: center;
-
+	position: relative;
 
 }
-
+.s-cards__round-star{
+	position: absolute;
+	bottom: 10%;
+	left: 30%;
+}
 .s-cards__inner{
 	width: 100%;
 	max-width: 1200px;
+
+	position: relative;
+	z-index: 5;
 }
 
 .cards{
@@ -520,6 +531,8 @@ address{
 	padding: 36px 30px 48px;
 	display: flex;
 	justify-content: center;
+	position: relative;
+	z-index: 5;
 }
 
 .s-contacts__inner{
@@ -585,6 +598,22 @@ address{
 	display: flex;
 	justify-content: center;
 	padding: 0 30px 28px;
+	position: relative;
+}
+
+
+.footer-star{
+	position: absolute;
+	bottom: 0px;
+	left: 0;
+	z-index: 1;
+}
+
+.footer-round{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: 1;
 }
 
 .footer__inner{
@@ -593,6 +622,8 @@ address{
 	display: flex;
 	align-items: center;
 	padding-bottom: 32px;
+	position: relative;
+	z-index: 5;
 }
 
 .footer__title{	
