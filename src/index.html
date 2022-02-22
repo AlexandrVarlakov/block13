@@ -14,7 +14,7 @@
     <section class="hero">
         <div class="video-bg">
             <video webkit-playsinline="" playsinline="" autoplay="true" muted="" loop="" poster="assets/img/video-bg.png">
-                <source src="assets/img/preview.mp4" type="video/mp4">
+                <source src="" type="video/mp4">
             </video>
         </div>
         <div class="hero__inner">
@@ -91,7 +91,7 @@
 
 
             <div class="cblock">
-                <button class="sound-btn">
+                <button class="sound-btn" data-value="0">
 
                 </button>
                 <div class="cblock__inner">
@@ -116,18 +116,71 @@
                     </div>
 
 
-                    <form action="post" class="form">
+                    <form action="post" class="form" >
                         <div class="form__col-1">
                             <div class="form__row">
-                                <div class="form__iwrap">
+                                <div class="form__iwrap ">
                                     <input type="text" class="form__tinput" name="name" placeholder="Имя*">
+
+                                    
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="input-border">
+                                        <defs>
+                                        <linearGradient id="Gradient" x1="0" x2="100" y1="0" y2="0" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#CD9E5E" offset="0%"/>
+                                            <stop stop-color="#CD9E5E" offset="10%"/>
+                                            <stop stop-color="#CD9E5E" offset="20%"/>
+                                            <stop stop-color="#CD9E5E" offset="30%"/>
+                                            <stop stop-color="#CD9E5E" offset="40%"/>
+                                            <stop stop-color="#CD9E5E" offset="50%"/>
+                                            <stop stop-color="#E6AB60" offset="100%"/>
+                                        </linearGradient>
+                                        </defs>
+                                        <rect x="5" y="5" height="100%" width="100%" style="width:calc(100% - 10px);height:calc(100% - 10px)" rx="12" ry="12" stroke-width="1" fill="transparent" stroke="url(#Gradient)"/>
+                                    </svg>
+                                    <div class="err-msg">
+                                        <span class="err-text">Поле не Может быть пустым</span>
+                                    </div>
                                 </div>
                                 <div class="form__iwrap">
-                                    <input type="text" class="form__tinput" name="email" placeholder="Телефон*">
+                                    <input type="text" class="form__tinput" name="phone" placeholder="Телефон*">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="input-border">
+                                        <defs>
+                                        <linearGradient id="Gradient" x1="0" x2="100" y1="0" y2="0" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#CD9E5E" offset="0%"/>
+                                            <stop stop-color="#CD9E5E" offset="10%"/>
+                                            <stop stop-color="#CD9E5E" offset="20%"/>
+                                            <stop stop-color="#CD9E5E" offset="30%"/>
+                                            <stop stop-color="#CD9E5E" offset="40%"/>
+                                            <stop stop-color="#CD9E5E" offset="50%"/>
+                                            <stop stop-color="#E6AB60" offset="100%"/>
+                                        </linearGradient>
+                                        </defs>
+                                        <rect x="5" y="5" height="100%" width="100%" style="width:calc(100% - 10px);height:calc(100% - 10px)" rx="12" ry="12" stroke-width="1" fill="transparent" stroke="url(#Gradient)"/>
+                                    </svg>
+                                    <div class="err-msg">
+                                        <span class="err-text">Поле не Может быть пустым</span>
+                                    </div>
                                 </div>                                
                             </div>
                             <div class="form__iwrap">
-                                <input type="text" class="form__tinput" name="email" placeholder="Email">
+                                <input type="text" class="form__tinput" name="email" placeholder="Email*">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="input-border">
+                                    <defs>
+                                    <linearGradient id="Gradient" x1="0" x2="100" y1="0" y2="0" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#CD9E5E" offset="0%"/>
+                                        <stop stop-color="#CD9E5E" offset="10%"/>
+                                        <stop stop-color="#CD9E5E" offset="20%"/>
+                                        <stop stop-color="#CD9E5E" offset="30%"/>
+                                        <stop stop-color="#CD9E5E" offset="40%"/>
+                                        <stop stop-color="#CD9E5E" offset="50%"/>
+                                        <stop stop-color="#E6AB60" offset="100%"/>
+                                    </linearGradient>
+                                    </defs>
+                                    <rect x="5" y="5" height="100%" width="100%" style="width:calc(100% - 10px);height:calc(100% - 10px)" rx="12" ry="12" stroke-width="1" fill="transparent" stroke="url(#Gradient)"/>
+                                </svg>
+                                <div class="err-msg">
+                                    <span class="err-text">Поле не Может быть пустым</span>
+                                </div>
                             </div>                                
                         </div>
                         <div class="form__col-2">
@@ -135,7 +188,7 @@
                             
 
                             <label for="cb-3" class="easyCheckbox">
-                                <input class ='easyCheckbox__hidden-checkbox' type="checkbox" name="approve" id="cb-3" checked>
+                                <input class ='easyCheckbox__hidden-checkbox' type="checkbox" name="approve" id="cb-3" checked required>
                                 <div class="easyCheckbox__visible-checkbox easyCheckbox__img"></div>
                                 <p class="easyCheckbox__text">Подписаться на все новости о проекте</p>
                             </label>
@@ -399,7 +452,7 @@
             <div class="footer__line"></div>
         </div>
     </footer>
-    
+    <script src="assets/js/imask.js"></script>
     <script src="assets/js/main.js"></script>
     
 </body>

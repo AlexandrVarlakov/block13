@@ -10,6 +10,7 @@
 
 html{
 	font-family: $ff;
+	overflow-x: hidden;
 }
 
 body{
@@ -255,7 +256,7 @@ address{
 	display: flex;
 	border-radius: 75px;
 	position: relative;
-	z-index: 10;
+	z-index: 15;
 
 	@media (max-width: 1024px){
 		flex-direction: column;
@@ -347,11 +348,60 @@ address{
 }
 
 
+.input-border{
+	position: absolute;
 
+	width: calc(100% + 8px);
+	height: calc(100% + 8px);
+	position: absolute;
+	z-index: 5;
+	top: -4px;
+	left: -4px;
+	z-index: 1;
+	filter: brightness(1.15);
+	opacity: 0;
+	transition: 300ms;
+}
 
 
 .form__iwrap{
 	width: 100%;
+	position: relative;
+	overflow: hidden;
+	border-radius: 15px;
+	
+}
+
+.form__iwrap.err-wrap{
+	box-shadow: 0 -4px 6px rgba(255,119,119,.4),0 4px 2px rgba(0,0,0,.38);
+	.input-border{
+		opacity: 1;
+	}
+	rect{
+		stroke: red !important;
+	}
+	.err-msg{
+		transform: translateX(0%);
+	}
+}
+
+.err-msg{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba($color: #444444, $alpha: .7);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 12px;
+	color: #fff;
+	left: 1px;
+	top: 1px;
+	border-radius: 15px;
+	transition: 300ms;
+	z-index: 25;
+	transform: translateX(-100%);
+
 	
 }
 
@@ -365,16 +415,36 @@ address{
 	font-size: 14px;
 	line-height: 19px;
 	text-transform: capitalize;
-	color: #ADADAD;
+	color: #fff;
 	padding: 0 20px;
-
+	transition: 300ms;
+	z-index: 2;
+	position: relative;
 	&::placeholder{
 		opacity: 1;
+		color: #ADADAD;;
 	}
 
+
+	&:hover{
+		background: rgba(255, 255, 255, 0.25);
+	}
 	@media (max-width: 540px){
 		height: 44px;
 	}
+
+
+	&:focus{
+		background: rgba(255, 255, 255, 0.35);
+	}
+
+	&:focus + .input-border{
+		opacity: 1;
+	}
+}
+
+.form__tinput.inputed{
+	background: rgba(255, 255, 255, 0.4);
 }
 
 .form__send{
@@ -398,6 +468,11 @@ address{
 	background: linear-gradient(90.92deg, #8F653B 0.36%, #EEBC70 66.93%, #8F653B 102.62%);
 	border-radius: 15px;
 	margin-top: 14px;
+	transition: 300ms;
+
+	&:hover{
+		filter: brightness(1.15);
+	}
 
 	@media (max-width: 540px){
 		margin-top: 24px;
@@ -484,20 +559,28 @@ address{
 .sound-btn{
 	width: 24px;
 	height: 24px;
-	background-image: url('../img/sound.svg');
-	background-size: 100%;
-	background-repeat: no-repeat;
+	
 	cursor: pointer;
 	position: absolute;
 	left: 0;
 	top: 50%;
 	transform: translateX(-50%);
-	z-index: 12;
+	z-index: 22;
 	@media (max-width: 1024px){
 		display: none;
 	}
 }
+.sound-btn[data-value="1"]{
+	background-image: url('../img/sound.svg');
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
 
+.sound-btn[data-value="0"]{
+	background-image: url('../img/sound-off.svg');
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
 .about{
 	padding: 80px 30px;
 	width: 100%;
