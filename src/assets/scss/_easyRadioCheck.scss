@@ -103,6 +103,10 @@ $radio-transition: 200ms;
     opacity: $checkbox-opacity;
     transition: $checkbox-transition;
     font-weight: 400;
+
+    @media (max-width: 540px){
+        font-size: 12px;
+    }
 }
 
 .easyCheckbox__hidden-checkbox:checked + .easyCheckbox__visible-checkbox + .easyCheckbox__text{
