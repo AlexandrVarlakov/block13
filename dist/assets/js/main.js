@@ -108,6 +108,9 @@ form.onsubmit = function(event){
   
   let err = 0;
 
+  let postAddress = this.getAttribute('action');
+
+  
 
   let nameField = this.querySelector('input[name = "name"]');
   let nameValue = nameField.value;
@@ -154,8 +157,26 @@ form.onsubmit = function(event){
     err++;
   }
 
+  
+  let data_body = "name=" + nameValue + "&phone="+ phoneValue + "&email="+emailValue;
+
   if (err === 0){
-    fetch(phpScript, { 
+    
+    if (postAddress == 'test'){
+          nameField.value = ""
+          phoneField.value = "";
+          emailField.value = "";
+          let testModal = new easyModal('thanks-modal', options);
+
+            setTimeout(()=>{
+              testModal.closeModal();
+                
+            },3000);
+    }
+
+
+
+    fetch(postAddress, { 
       method: "POST",
       body: data_body,   
       headers:{"content-type": "application/x-www-form-urlencoded"} 
@@ -168,11 +189,19 @@ form.onsubmit = function(event){
             }   
         
 
+          
+           
+      let modal = new easyModal('thanks-modal', options);
+      nameField.value = ""
+      phoneField.value = "";
+      emailField.value = "";
 
+       setTimeout(()=>{
+           modal.closeModal();
+
+       },3000);
     console.log("Почта отправлена");
-    inputs.forEach ( (input) => {
-        input.value = '';
-    });
+    
     return response.text()
     })
     .then(i => console.log(i))
@@ -199,4 +228,34 @@ soundBtn.onclick = function(){
 
 
   
+}
+
+
+let options = {
+  //zIndex: 1000, 
+  //background: 'rgba(12, 130, 121, 0.5)', 
+  //displayFog: 'block', //Значение по умолчанию flex
+  displayModal: 'flex', //Значение по умолчанию block
+  showModalAnimationName: 'fadeInBottom', 
+  closeModalAnimationName: 'fadeOutTop', 
+  closeClasses: ['close-modal'], 
+  //closeModalOnFogClick: false, 
+  showModalAnimationDuration: 800,
+  //closeModalAnimationDuration: 300,
+  showFogAnimationName: 'fadeIn',
+  closeFogAnimationName: 'fadeOut',
+  showFogAnimationDuration: 400,
+  closeFogAnimationDuration: 400,
+
+  documentScrolled: false, 
+  //onModalClose: function(){console.log('modal close');},
+  //onModalOpen: function(){console.log('modal open');}
+
+}
+
+document.querySelector('.timer__label--minutes').onclick = function(){
+
+ 
+
+  let modal = new easyModal('thanks-modal', options);
 }

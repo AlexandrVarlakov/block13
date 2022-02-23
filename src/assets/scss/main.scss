@@ -256,7 +256,7 @@ address{
 	display: flex;
 	border-radius: 75px;
 	position: relative;
-	z-index: 15;
+	z-index: 17;
 
 	@media (max-width: 1024px){
 		flex-direction: column;
@@ -269,13 +269,13 @@ address{
 	}
 }
 .form-wrap {
-	width: calc(100% + 8px);
-	height: calc(100% + 8px);
+	width: calc(100% + 12px);
+	height: calc(100% + 14px);
 	position: absolute;
 	z-index: 5;
-	top: -4px;
-	left: -4px;
-	z-index: 11;
+	top: -7px;
+	left: -5px;
+	z-index: 15;
 	@media (max-width: 1024px){
 		display: none;
 	}
@@ -384,7 +384,10 @@ address{
 		transform: translateX(0%);
 	}
 }
-
+.err-text{
+	text-align: center;
+	padding: 0 5px;
+}
 .err-msg{
 	position: absolute;
 	width: 100%;
@@ -402,7 +405,9 @@ address{
 	z-index: 25;
 	transform: translateX(-100%);
 
-	
+	@media (max-width: 1200px){
+		font-size: 10px;
+	}
 }
 
 .form__tinput{
@@ -565,7 +570,7 @@ address{
 	left: 0;
 	top: 50%;
 	transform: translateX(-50%);
-	z-index: 22;
+	z-index: 20;
 	@media (max-width: 1024px){
 		display: none;
 	}
@@ -1053,3 +1058,17 @@ address{
 	}
 }
 
+.thanks-modal{
+	width: 300px;
+	height: 280px;
+	display: none;
+	background-color: rgba($color: #444444, $alpha: .8);
+	backdrop-filter: blur(20px);
+	justify-content: center;
+	align-items: center;
+	padding: 25px;
+	.about__title{
+		font-size: 24px;
+		line-height: 1.5;
+	}
+}
